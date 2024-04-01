@@ -1,0 +1,190 @@
+Microsoft Windows [Version 10.0.22631.3155]
+(c) Microsoft Corporation. Alle Rechte vorbehalten.
+
+C:\Users\hanne>cd IH-Labs
+
+C:\Users\hanne\IH-Labs>git clone https://github.com/PatriciaMaureen/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Total 40 (delta 0), reused 0 (delta 0), pack-reused 40
+Receiving objects: 100% (40/40), 12.63 KiB | 1.80 MiB/s, done.
+Resolving deltas: 100% (11/11), done.
+
+C:\Users\hanne\IH-Labs>cd lab-bash
+
+C:\Users\hanne\IH-Labs\lab-bash>dir
+ Datenträger in Laufwerk C: ist Windows
+ Volumeseriennummer: 8AA1-3115
+
+ Verzeichnis von C:\Users\hanne\IH-Labs\lab-bash
+
+01.04.2024  12:01    <DIR>          .
+01.04.2024  12:01    <DIR>          ..
+01.04.2024  12:01             6.148 .DS_Store
+01.04.2024  12:01    <DIR>          .github
+01.04.2024  12:01    <DIR>          exercices
+01.04.2024  12:01    <DIR>          inputs
+01.04.2024  12:01    <DIR>          lorem
+01.04.2024  12:01    <DIR>          lorem-copy
+01.04.2024  12:01    <DIR>          outputs
+01.04.2024  12:01             2.597 readme.md
+               2 Datei(en),          8.745 Bytes
+               8 Verzeichnis(se), 102.863.990.784 Bytes frei
+
+C:\Users\hanne\IH-Labs\lab-bash>echo "Hello World!"
+"Hello World!"
+
+C:\Users\hanne\IH-Labs\lab-bash>echo Hello World!
+Hello World!
+
+C:\Users\hanne\IH-Labs\lab-bash>mkdir new_dir
+
+C:\Users\hanne\IH-Labs\lab-bash>rmdir new_dir
+
+C:\Users\hanne\IH-Labs\lab-bash>cd lorem
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem>cd sed.txt
+Der Verzeichnisname ist ungültig.
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem>copy sed.txt C:\Users\hanne\IH-Labs\lab-bash\lorem-copy
+        1 Datei(en) kopiert.
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem>cd lorem-copy
+Das System kann den angegebenen Pfad nicht finden.
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem>cd lab-bash
+Das System kann den angegebenen Pfad nicht finden.
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem>cd..
+
+C:\Users\hanne\IH-Labs\lab-bash>cd lorem-copy
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem-copy>dir
+ Datenträger in Laufwerk C: ist Windows
+ Volumeseriennummer: 8AA1-3115
+
+ Verzeichnis von C:\Users\hanne\IH-Labs\lab-bash\lorem-copy
+
+01.04.2024  12:51    <DIR>          .
+01.04.2024  12:41    <DIR>          ..
+01.04.2024  12:01             6.148 .DS_Store
+01.04.2024  12:01                 0 .gitkeep
+01.04.2024  12:01                12 dummy_file.txt
+01.04.2024  12:01               900 sed.txt
+               4 Datei(en),          7.060 Bytes
+               2 Verzeichnis(se), 102.834.294.784 Bytes frei
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem-copy>cd ..
+
+C:\Users\hanne\IH-Labs\lab-bash>cd lorem
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem>dir
+ Datenträger in Laufwerk C: ist Windows
+ Volumeseriennummer: 8AA1-3115
+
+ Verzeichnis von C:\Users\hanne\IH-Labs\lab-bash\lorem
+
+01.04.2024  12:01    <DIR>          .
+01.04.2024  12:41    <DIR>          ..
+01.04.2024  12:01               863 at.txt
+01.04.2024  12:01               861 at.txte
+01.04.2024  12:01               451 lorem.txt
+01.04.2024  12:01               900 sed.txt
+               4 Datei(en),          3.075 Bytes
+               2 Verzeichnis(se), 102.833.029.120 Bytes frei
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem>copy at.txt; lorem.txt C:\Users\hanne\IH-Labs\lab-bash\lorem-copy
+Syntaxfehler.
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem> copy *.txt C:\Users\hanne\IH-Labs\lab-bash\lorem-copy
+at.txt
+at.txte
+lorem.txt
+sed.txt
+C:\Users\hanne\IH-Labs\lab-bash\lorem-copy\sed.txt überschreiben? (Ja/Nein/Alle): Ja
+        4 Datei(en) kopiert.
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem>copy at.txt C:\Users\hanne\IH-Labs\lab-bash\lorem-copy; lorem.txt C:\Users\hanne\IH-Labs\lab-bash\lorem-copy
+Syntaxfehler.
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem>copy at.txt C:\Users\hanne\IH-Labs\lab-bash\lorem-copy;copy lorem.txt C:\Users\hanne\
+IH-Labs\lab-bash\lorem-copy
+Syntaxfehler.
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem>C:\Users\hanne\IH-Labs\lab-bash\lorem>copy at.txt C:\Users\hanne\IH-Labs\lab-bash\lorem-copy;copy lorem.txt C:\Users\hanne\
+Der Befehl "C:\Users\hanne\IH-Labs\lab-bash\lorem" ist entweder falsch geschrieben oder
+konnte nicht gefunden werden.
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem>copy at.txt & lorem.txt C:\Users\hanne\IH-Labs\lab-bash\lorem-copy
+Die Datei kann nicht in sich selbst kopiert werden.
+        0 Datei(en) kopiert.
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem>copy at.txt C:\Users\hanne\IH-Labs\lab-bash\lorem-copy & copy lorem.txt C:\Users\hann
+e\IH-Labs\lab-bash\lorem-copy
+C:\Users\hanne\IH-Labs\lab-bash\lorem-copy\at.txt überschreiben? (Ja/Nein/Alle): Ja
+        1 Datei(en) kopiert.
+C:\Users\hanne\IH-Labs\lab-bash\lorem-copy\lorem.txt überschreiben? (Ja/Nein/Alle): Ja
+        1 Datei(en) kopiert.
+C:\Users\hanne\IH-Labs\lab-bash\lorem>type C:\Users\hanne\IH-Labs\lab-bash\lorem\sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem>type C:\Users\hanne\IH-Labs\lab-bash\lorem\at.txt & type C:\Users\hanne\IH-Labs\lab-bash\lorem\lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem> more C:\Users\hanne\IH-Labs\lab-bash\lorem\sed.txt | findstr /n "^"
+1:Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+2:totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+3:Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+4:sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+5:Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+6:sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+7:Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+8:nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+9:vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem-copy>type sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem-copy>echo "Homo homini lupus." >> sed.txt
+
+C:\Users\hanne\IH-Labs\lab-bash\lorem-copy>type sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+"Homo homini lupus."
