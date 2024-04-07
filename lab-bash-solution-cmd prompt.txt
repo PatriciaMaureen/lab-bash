@@ -188,3 +188,17 @@ Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit la
 nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
 vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
 "Homo homini lupus."
+
+# I did change to bash because a lot of the commands did not work otherwise and it was hard to find the right commands. Do not wonder, I am using the Laptop of my boyfriend Hannes. That is why you find the name in the code.
+
+hannes@MININT-QREDN4B:/mnt/c/users/hanne/IH-Labs/lab-bash$ sed -i 's/et/ET/g' lorem/at.txt
+hannes@MININT-QREDN4B:/mnt/c/users/hanne/IH-Labs/lab-bash$ whoami
+hannes
+hannes@MININT-QREDN4B:/mnt/c/users/hanne/IH-Labs/lab-bash$ pwd
+/mnt/c/users/hanne/IH-Labs/lab-bash
+hannes@MININT-QREDN4B:/mnt/c/users/hanne/IH-Labs/lab-bash$ ls lorem/*.txt
+lorem/at.txt  lorem/lorem.txt  lorem/sed.txt
+hannes@MININT-QREDN4B:/mnt/c/users/hanne/IH-Labs/lab-bash$ cat lorem/sed.txt | wc -l
+9
+hannes@MININT-QREDN4B:/mnt/c/users/hanne/IH-Labs/lab-bash$ find . -type f -name "lorem*" | wc -l
+2
